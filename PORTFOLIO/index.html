@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">PORTFOLIO.</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Hello, I'm</span>
+          <h1>
+            Nitin<span style="color: white; font-size: inherit"
+              >Web Developer & <br />
+              Graphics Designer</span
+            >
+          </h1>
+          <p
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+            "
+          >
+            I build exceptional digital experiences that are fast, accessible,
+            lovely, and responsive. Let's turn your ideas into reality.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-img-wrapper">
+            <img
+              src="assets/images/profile.png"
+              alt="Profile"
+              class="about-img"
+            />
+          </div>
+          <div class="about-content">
+            <h3>Who am I?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem">
+              I am a passionate creative developer based in India. I enjoy
+              creating things that live on the internet, whether that be
+              websites, applications, or anything in between. My goal is to
+              always build products that provide pixel-perfect, performant
+              experiences.
+            </p>
+
+            <h3 style="margin-bottom: 1rem">My Skills</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">UI Design</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+
+            <div style="margin-top: 2rem">
+              <a href="#" class="btn btn-outline"
+                ><i class="fas fa-download"></i> Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3>Aura Nexus Layout</h3>
+              <p>
+                A high-performance modern web application dashboard featuring
+                dark mode aesthetics and real-time data visualization.
+              </p>
+              <div class="project-links">
+                <a href="#" class="link-text"
+                  >Live Demo <i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="link-text"
+                  >Source Code <i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3>Data Stream Analytics</h3>
+              <p>
+                Complex 3D data visualization tool for analyzing backend
+                streams. Built with WebGL and React.
+              </p>
+              <div class="project-links">
+                <a href="#" class="link-text"
+                  >Live Demo <i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="link-text"
+                  >Source Code <i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 Placeholder -->
+          <div class="project-card">
+            <div
+              style="
+                height: 200px;
+                background: #1a1a2e;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #4cc9f0;
+              "
+            >
+              <i class="fas fa-code fa-3x"></i>
+            </div>
+            <div class="project-info">
+              <h3>Coming Soon</h3>
+              <p>
+                Currently working on something exciting. Stay tuned for updates!
+              </p>
+              <div class="project-links">
+                <span class="link-text" style="opacity: 0.5">In Progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p
+          style="
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto mb-2;
+          "
+        >
+          I'm currently looking for new opportunities, my inbox is always open.
+          Whether you have a question or just want to say hi, I'll try my best
+          to get back to you!
+        </p>
+        <div style="margin-top: 2rem">
+          <a href="mailto:hello@example.com" class="btn btn-primary"
+            >Say Hello</a
+          >
+        </div>
+
+        <div
+          style="
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 1.5rem;
+          "
+        >
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed & Built by Nitin</p>
+        <p style="margin-top: 0.5rem; opacity: 0.5">
+          &copy; 2024 All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
