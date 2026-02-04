@@ -1,0 +1,24 @@
+/* Ignore "Unknown at rule" warnings - this is valid Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900 font-sans antialiased;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-blue-700 shadow-md hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply border border-slate-300 hover:border-primary hover:text-primary bg-white;
+}
+
+.card {
+  @apply bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow;
+}

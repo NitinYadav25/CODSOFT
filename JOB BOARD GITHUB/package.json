@@ -1,0 +1,14 @@
+{
+  "name": "job-board-root",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run db\" \"npm run server\" \"npm run client\"",
+    "db": "mongod --port 27017 --dbpath ./data",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "install:all": "npm install && cd client && npm install && cd server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
